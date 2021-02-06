@@ -16,8 +16,9 @@
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/animate.min.css"> 
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/animations.css"> 
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/owl.carousel.css">             
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-red.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/owl.carousel.css">       
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/YTPlayer.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-red.css">     
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/style.css">
         <!--  Js -->
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/modernizr.custom.js"></script>
@@ -124,7 +125,7 @@
                     <li><a href="#" target="_blank" class="fa fa-weibo"><i class="fa fa-weibo color-default"></i></a></li> 
                     <li><a href="#" target="_blank" class="fa fa-facebook"><i class="fa fa-facebook color-default"></i></a></li>
                 </ul>   
-                <div class="copyright">Copyright &copy; 2018 <a href="index.html">lxxii</a><br> All Rights Reserved</div>
+                <div class="copyright">Copyright &copy; 2018 <a href="index.html">lxxii</a></div>
             </footer>       
         </nav>
         <!-- end: NAVIGATION -->   
@@ -142,44 +143,53 @@
 
             <!-- HOME Section --> 
             <section id="home" class="page-activ">
-                <!--
-                      IMPORTANT: Includes function javascript of custom.js. 
-                                 Section name: LOAD FULL SCREEN IMAGE
-                -->
-                <div class="content table home-bg">
+                <div class="content table" id="video_bg">
                     <div class="table-middle">
                         
-                            <div class="intro-text">
-                                
-                                <h1>
-                                    <strong>I'm <span class="color-default">&nbsp;John Doe&nbsp;</span></strong>
-                                </h1>
-                                
-                                <!-- OWL-CAROUSERL  -->
-                                <!--
-                                      IMPORTANT: Includes function javascript of custom.js. 
-                                                 Section name: TEXT ROTATOR
-                                -->
-                                <div class="owl-carousel rotate-text">                                    
-                                    <div class="item">
-                                        <h3>Professional <strong>web designer</strong></h3>
-                                    </div>
-                                    <div class="item">
-                                        <h3>Professional <strong>developer</strong></h3>
-                                    </div>
-                                    <div class="item">
-                                        <h3>Professional <strong>programer</strong></h3>
-                                    </div>   
+                        <!-- FULLSCREEN VIDEO YT -->
+                        <div id="P1" class="player" data-property="{
+                             videoURL:'http://youtu.be/9d8wWcJLnFI',
+                             containment:'#video_bg',
+                             showControls:false,
+                             startAt:160,
+                             mute:true,
+                             vol:1,
+                             autoPlay:true,
+                             loop:true,
+                             opacity:1
+                        }"></div>
+                        <!-- FULLSCREEN VIDEO YT -->
+
+
+                        <div class="intro-text">
+
+                            <!-- OWL-CAROUSERL  -->
+                            <!--
+                                  IMPORTANT: Includes function javascript of custom.js. 
+                                             Section name: TEXT ROTATOR
+                            -->
+                            <div class="owl-carousel rotate-text">
+
+                                <div class="item">
+                                    <h2 class="color-white">HELLO <strong><span class="bg-default color-white">&nbsp;CREATIVE&nbsp;</span></strong></h2>
+                                    <h2 class="color-white">STUDIO FROM POLAND</h2>
                                 </div>
-                                <!-- end: OWL-CAROUSERL  -->
-                                
-                                
-                            </div><!-- .intro-text -->
+
+                                <div class="item">
+                                    <h2 class="color-white"><strong><span class="bg-default">&nbsp;Everything&nbsp;</span></strong> You  Need</h2>               
+                                    <h2 class="color-white">Unique &amp; Flexible</h2>
+                                </div>
+
+                            </div>
+                            <!-- end: OWL-CAROUSERL  -->
+
+                        </div><!-- .intro-text -->
 
                     </div><!-- .table-middle -->
                 </div><!-- .content --> 
             </section>
             <!-- end: HOME Section -->
+            
             
             
             <!-- ABOUT Section --> 
@@ -1099,8 +1109,7 @@
                                         
                                         <div class="space30"></div>
                                         <!-- SOCIAL-ICONS -->
-                                        <ul class="social-icons social-v2 social-2x">                                            
-											<li><a href="#" target="_blank" data-toggle="tooltip" title="qq" class="fa fa-qq"><i class="fa fa-qq"></i></a></li>
+                                        <ul class="social-icons social-v2 social-2x">                                            <li><a href="#" target="_blank" data-toggle="tooltip" title="qq" class="fa fa-qq"><i class="fa fa-qq"></i></a></li>
                                             <li><a href="#" target="_blank" data-toggle="tooltip" title="weixin" class="fa fa-weixin"><i class="fa fa-weixin"></i></a></li>
                                             <li><a href="#" target="_blank" data-toggle="tooltip" title="weibo" class="fa fa-weibo"><i class="fa fa-weibo"></i></a></li> 
                                             <li><a href="#" target="_blank" data-toggle="tooltip" title="facebook" class="fa fa-facebook"><i class="fa fa-facebook"></i></a></li>
@@ -1120,7 +1129,7 @@
                                               IMPORTANT: change the email address at the top of the contact.php 
                                                         file to the email address that you want this form to send to 
                                         -->
-                                        <form id="contact-valid-form" class="form-style" action="contact.php" method="POST">
+                                        <form id="contact-valid-form" class="form-style" action="contact.php" method="POST" role="form">
                                             <div class="form-group">
                                                 <input type="text" class="text-field form-control field-validation required" data-validation-type="string" id="form-name" placeholder="Full Name" name="name" />
                                                 <i class="form-icon fa fa-user"></i>
@@ -1151,8 +1160,7 @@
                     </div><!-- .container -->
                 </div><!-- .content --> 
             </section>
-            <!-- end: CONTACT Section -->             
-                       
+            <!-- end: CONTACT Section -->                 
             
         </div>
         <!-- end: PAGE-WRAPPER -->
@@ -1170,13 +1178,26 @@
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/jquery.lazy.min.js"></script>
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/functions.js"></script>
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/custom.js"></script>
+               
+                
+        <!-- PLUGIN FULL SCREEN VIDEO -->
+        <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/jquery.mb.YTPlayer.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+
+               jQuery(".player").YTPlayer();
+               
+            });      
+        </script>
         
         
         <!-- STYLE SWITCHER --> 
         <!-- 
-             IMPORTANT: Delete plugin script "style-switcher.js" to disable style-swither.                    
+             IMPORTANT: To disable style-swither: 
+                        delete the code between the tags: <!-- STYLE SWITCHER -> 
         --> 
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.js"></script>
+   
    
     </body>
 </html>

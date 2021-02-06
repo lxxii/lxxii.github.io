@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/animate.min.css"> 
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/animations.css"> 
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/owl.carousel.css">             
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/owl.carousel.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-red.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/style.css">
         <!--  Js -->
@@ -50,7 +50,7 @@
             <!-- Menu -->
             <div class="menu-box my-scrollbar">
                 <div id="dl-menu" class="dl-menuwrapper">
-                    <ul class="dl-menu dl-menuopen">
+                    <ul class="dl-menu dl-menuopen menu-active-v3 menu-weight700">
                         <li><a class="page-link" href="index.html#home" data-hover="首页">首页</a></li>  
                         <li><a class="page-link" href="index.html#about" data-hover="关于">关于</a></li>
                         <li><a class="page-link" href="index.html#blog" data-hover="说说">说说</a></li>
@@ -118,13 +118,13 @@
                 </div>  
             </div>
             <footer class="footer">
-                <ul class="social-icons social-v1">
+                <ul class="social-icons social-v2">
                     <li><a href="#" target="_blank" class="fa fa-qq"><i class="fa fa-qq color-default"></i></a></li>
                     <li><a href="#" target="_blank" class="fa fa-weixin"><i class="fa fa-weixin color-default"></i></a></li>
                     <li><a href="#" target="_blank" class="fa fa-weibo"><i class="fa fa-weibo color-default"></i></a></li> 
                     <li><a href="#" target="_blank" class="fa fa-facebook"><i class="fa fa-facebook color-default"></i></a></li>
                 </ul>   
-                <div class="copyright">Copyright &copy; 2018 <a href="index.html">lxxii</a><br> All Rights Reserved</div>
+                <div class="copyright">Copyright &copy; 2018 <a href="index.html">lxxii</a></div>
             </footer>       
         </nav>
         <!-- end: NAVIGATION -->   
@@ -140,19 +140,20 @@
             </div>
             
 
+            
             <!-- HOME Section --> 
-            <section id="home" class="page-activ">
-                <!--
-                      IMPORTANT: Includes function javascript of custom.js. 
-                                 Section name: LOAD FULL SCREEN IMAGE
-                -->
-                <div class="content table home-bg">
-                    <div class="table-middle">
+            <section id="home" class="page-activ" style="background: none;">
+                <div class="content table" style="background: none;">
+                    <div class="table-middle text-center">
                         
                             <div class="intro-text">
                                 
                                 <h1>
-                                    <strong>I'm <span class="color-default">&nbsp;John Doe&nbsp;</span></strong>
+                                    <strong>
+                                        Hi, I'm
+                                        <span class="space10 block hidden-sm hidden-md hidden-lg"></span>
+                                        <span class="bg-default color-white">&nbsp;John Doe&nbsp;</span>
+                                    </strong>
                                 </h1>
                                 
                                 <!-- OWL-CAROUSERL  -->
@@ -173,8 +174,8 @@
                                 </div>
                                 <!-- end: OWL-CAROUSERL  -->
                                 
-                                
                             </div><!-- .intro-text -->
+                            
 
                     </div><!-- .table-middle -->
                 </div><!-- .content --> 
@@ -185,7 +186,7 @@
             <!-- ABOUT Section --> 
             <section id="about">
                 <div class="content">
-                    <div class="container about">
+                    <div class="container">
                       
                                 
                                 <header>
@@ -196,15 +197,15 @@
                                 <!--  image & text -->
                                 <div class="row">
                                     <div class="col-md-6 no-padding">
-                                        <img src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/about-me.jpg" class="img-responsive center-block" alt="John">
+                                        <img src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/about-me.jpg" class="img-responsive center-block" alt="">
                                     </div>
-                                    <div class="col-md-6 col-box bg-gray-light">
+                                    <div class="col-md-6 col-box bg-white">
                                         <div class="page-header">              
                                             <h4>Hello, I'm John.</h4>
                                         </div>
                                         <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                                         <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                                        <h2 class="text-right color-white"><strong>MY STORY</strong></h2>
+                                        <h2 class="text-right color-gray-light"><strong>MY STORY</strong></h2>
                                     </div>
                                 </div><!-- .row -->
                                 <!--  end: images & text -->
@@ -224,7 +225,7 @@
                                             <h4>推荐</h4>
                                         </div>
 
-                                        <div class="owl-carousel testimonials testimonials-bg-gray-light">
+                                        <div class="owl-carousel testimonials testimonials-v1 testimonials-bg-gray-light">
                                             <div class="item">
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry... </p>
                                                 <div class="testimonial-info">
@@ -303,7 +304,8 @@
             
                                 <!-- achivements -->
                                 <div class="achivement row">
-                                    <div class="achivement-box col-sm-3 bg-gray-light anim-shadow">
+
+                                    <div class="achivement-box col-sm-3 bg-white anim-shadow">
                                         <i class="pe-7s-smile"></i>
                                         <h5 class="name">happy clients</h5>
                                         <span class="count">1,024</span>
@@ -315,7 +317,7 @@
                                         <span class="count">5,930</span>
                                     </div><!-- .achivement-box -->
 
-                                    <div class="achivement-box col-sm-3 bg-gray-light anim-shadow">
+                                    <div class="achivement-box col-sm-3 bg-white anim-shadow">
                                         <i class="pe-7s-coffee"></i>
                                         <h5 class="name">coffee consumed</h5>
                                         <span class="count">5,002</span>
@@ -326,6 +328,7 @@
                                         <h5 class="name">solved tickets</h5>
                                         <span class="count">599</span>
                                     </div><!-- .achivement-box -->
+
                                 </div>
                                 <!-- end: achivements -->
                                 
@@ -350,7 +353,7 @@
                                             </span>
                                         </div><!-- .lt-date-ico -->
                                         <div class="tl-box bg-white anim-shadow">
-                                            <h6 class="title">FRONT-END DEVELOPER</h6>
+                                            <h5 class="title">FRONT-END DEVELOPER</h5>
                                             <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape.</p>      
                                         </div><!-- .tl-box -->
                                     </div><!-- .timeline-item -->
@@ -367,7 +370,7 @@
                                             </span>
                                         </div><!-- .lt-date-ico -->
                                         <div class="tl-box bg-white anim-shadow">
-                                            <h6 class="title">COMPUTER UNIVERSITY</h6>
+                                            <h5 class="title">COMPUTER UNIVERSITY</h5>
                                             <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape.</p>      
                                         </div><!-- .tl-box -->
                                     </div><!-- .timeline-item -->                                
@@ -384,14 +387,14 @@
                                             </span>
                                         </div><!-- .lt-date-ico -->
                                         <div class="tl-box bg-white anim-shadow">
-                                            <h6 class="title">COMPUTER SCHOLL</h6>
+                                            <h5 class="title">COMPUTER SCHOLL</h5>
                                             <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape.</p>      
                                         </div><!-- .tl-box -->
                                     </div><!-- .timeline-item -->
                                 </div>
                                 <!-- end: timeline -->
                                 
-                                <div class="space50 hidden-sm hidden-xs"></div> 
+                                <div class="space100 hidden-sm hidden-xs"></div> 
                                 
                        
                     </div><!-- .container-fluid -->
@@ -1151,7 +1154,7 @@
                     </div><!-- .container -->
                 </div><!-- .content --> 
             </section>
-            <!-- end: CONTACT Section -->             
+            <!-- end: CONTACT Section -->   
                        
             
         </div>
@@ -1172,9 +1175,29 @@
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/custom.js"></script>
         
         
+        <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/jquery.backgroundvideo.min.js"></script>
+        
+        <!-- 
+              IMPORTANT: code in the <script> you can transfer the file js / custom.js
+        -->
+        <script type="text/javascript">
+        jQuery(document).ready(function() {
+            var videobg = new  jQuery.backgroundVideo(jQuery('body'), {
+               "align": "cebterXY",
+               "width": 1280,
+               "height": 720,
+               "path": "//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/media/",
+               "filename": "video1",
+               "types": ["mp4","ogg","webm"]
+            });
+        });
+        </script>
+        
+        
         <!-- STYLE SWITCHER --> 
         <!-- 
-             IMPORTANT: Delete plugin script "style-switcher.js" to disable style-swither.                    
+             IMPORTANT: To disable style-swither: 
+                        delete the code between the tags: <!-- STYLE SWITCHER -> 
         --> 
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.js"></script>
    
