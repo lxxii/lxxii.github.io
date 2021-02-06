@@ -85,7 +85,7 @@ $(document).ready(function() {
        LOAD FULL SCREEN BG (requires: backstretch.min.js)
     =====================================================*/
 
-    $(".home-bg").backstretch("assets/img/bg/1.jpg");
+    $(".home-bg").backstretch("//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/bg/1.jpg");
 
 
     /*==========================================
