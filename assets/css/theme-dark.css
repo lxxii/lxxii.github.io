@@ -2232,7 +2232,7 @@ nav.nav-opacity ul.dl-menu li a::before {
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: rgba(255, 0, 0, 1);
+  background-color: rgba(102, 102, 102, 0.5);
   border-radius: 100%;
   -webkit-animation: bounce 2s infinite ease-in-out;
   animation: bounce 2s infinite ease-in-out;

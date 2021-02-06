@@ -2122,20 +2122,6 @@ nav.nav-opacity ul.dl-menu li a::before {
   padding-bottom: 0;
   border: 0;
 }
-.blog-post .post-content .post-caption .sharing-btns .btn.qq {
-  color: #009BD5;
-}
-.blog-post .post-content .post-caption .sharing-btns .btn.qq:hover {
-  color: #fff;
-  background: #009BD5;
-}
-.blog-post .post-content .post-caption .sharing-btns .btn.weixin {
-  color: #00D00D;
-}
-.blog-post .post-content .post-caption .sharing-btns .btn.weixin:hover {
-  color: #fff;
-  background: #00D00D;
-}
 .blog-post .post-content .post-caption .sharing-btns .btn.facebook {
   color: #3B5998;
 }
@@ -2143,10 +2129,24 @@ nav.nav-opacity ul.dl-menu li a::before {
   color: #fff;
   background: #3B5998;
 }
+.blog-post .post-content .post-caption .sharing-btns .btn.twitter {
+  color: #55ACEE;
+}
+.blog-post .post-content .post-caption .sharing-btns .btn.twitter:hover {
+  color: #fff;
+  background: #55ACEE;
+}
 .blog-post .post-content .post-caption .sharing-btns .btn.google {
   color: #DD4B39;
 }
 .blog-post .post-content .post-caption .sharing-btns .btn.google:hover {
+  color: #fff;
+  background: #DD4B39;
+}
+.blog-post .post-content .post-caption .sharing-btns .btn.pinterest {
+  color: #DD4B39;
+}
+.blog-post .post-content .post-caption .sharing-btns .btn.pinterest:hover {
   color: #fff;
   background: #DD4B39;
 }
@@ -2232,7 +2232,7 @@ nav.nav-opacity ul.dl-menu li a::before {
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: rgba(255, 0, 0, 1);
+  background-color: rgba(102, 102, 102, 0.5);
   border-radius: 100%;
   -webkit-animation: bounce 2s infinite ease-in-out;
   animation: bounce 2s infinite ease-in-out;
@@ -3222,9 +3222,6 @@ html.no-touch .social-icons.social-3x li a:hover:before {
 .color-pinterest {
   color: #db242c;
 }
-.color-qq {
-  color: #009BD5;
-}
 .color-reddit {
   color: #ff4500;
 }
@@ -3263,15 +3260,6 @@ html.no-touch .social-icons.social-3x li a:hover:before {
 }
 .color-twitter {
   color: #55acee;
-}
-.color-weibo {
-  color: #DF2029;
-}
-.color-weixin {
-  color: #00D00D;
-}
-.color-youtube {
-  color: #F00000;
 }
 .vimeo {
   color: #44bbff;
