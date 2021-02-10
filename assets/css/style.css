@@ -172,6 +172,9 @@
 }
 
 
+.social-icons li .fa-facebook {
+  color: #3B5998;
+}
 .social-icons li .fa-qq {
   color: #0BB2FF;
 }
@@ -185,6 +188,9 @@
   color: #f00;
 }
 
+html.no-touch .social-icons li a.fa-facebook:hover:before {
+  color: #3B5998;
+}
 html.no-touch .social-icons li a.fa-qq:hover:before {
   color: #0BB2FF;
 }
