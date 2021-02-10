@@ -96,7 +96,7 @@ $(document).ready(function() {
     
     var homeBg = document.querySelector('.home-bg');
     if (homeBg) {       
-        $('.home-bg').backstretch("assets/img/bg/1.jpg");     
+        $('.home-bg').backstretch("//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/bg/1.jpg");     
     }
     
 
