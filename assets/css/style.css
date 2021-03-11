@@ -1,0 +1,216 @@
+/*
+ *   Template Name: Euforia - Responsive Vcard Template
+ *   Version: 2.1
+ *   Author:  Lukasz Lelek
+ *   Website: www.ht2.pl
+*/
+/*
+ *	TABLE CONTENTS
+ *	-------------------------------
+ *                
+ *           - HOME SECTION
+ *           - ABOUT SECTION
+ *           - SERVICES SECTION
+ *           - PORTFOLIO SECTION
+ *           - PORTFOLIO-SINGLE-V2 SECTION
+ *           - BLOG SECTION
+ *           - BLOG-POST SECTION
+ *           - CONTACT SECTION
+ *
+ *	------------------------------- 
+*/
+
+
+/* HOME SECTION */
+.intro-text {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.intro-text .weight300 {
+    font-weight: 300;
+}
+.block {
+    display: block;
+}
+
+
+/* ABOUT SECTION */
+
+
+/* SERVICES SECTION */
+.bg-img-services {
+    background: url('../img/bg/services-bg1.jpg') 100% fixed no-repeat; 
+    position: relative;  
+}
+.shadow {
+    height: 80%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: url("../img/shadow1.png") no-repeat scroll center top;
+    background-size: 100%;
+}
+.bg-opacity {
+    background: rgba(255,255,255, .9);
+}
+.padding30 {
+  padding: 30px;
+}
+.services-img01 {
+  position: absolute;
+  z-index: 2;
+  bottom: -90px;
+  right: 0px;
+}
+
+/* PORTFOLIO SECTION */
+/* BLOG SECTION */
+/* CONTACT SECTION  */
+.contact-details {
+  background: url(../img/bg/map_bg.png) left 0px no-repeat;
+}
+.contact-form .form-style .form-loader {
+  margin-right: 8px;
+  display: none;
+}
+.contact-form .form-style .alert {
+  color: #ff1919;
+  background: none;
+  font-size: 12px;
+  letter-spacing: 0;
+  border-radius: 0;
+  border: 0;
+  padding: 4px 2px;
+  font-size: 14px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.contact-form .form-style .alert-validate-form {
+  display: none;
+}
+.contact-form .form-style .alert-validate-form .alert.error {
+    display: block;
+    background: #fd4040;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 20px;
+    border: 0;
+    font-weight: 400;
+}
+.contact-form .form-style .alert-validate-form .alert.success {
+  background: #119400;
+  color: #fff;
+  font-weight: 400;
+  padding: 15px 20px;
+}
+
+
+
+/*  左爱
+-------------------------------------------------------------- */
+.footer .copyright {
+    margin-bottom: 10px !important;
+}
+
+:active {
+  text-decoration:none !important;
+}
+
+:focus {
+  outline: none !important;
+}
+::-moz-focus-inner {
+  border: 0 !important;
+}
+
+.btn.btn-link {
+  text-decoration:none !important;
+}
+
+@media (min-width: 768px) {
+  .blog-masonry .item-sizer,
+  .blog-masonry .item {
+  width: 100% !important;
+}
+}
+
+@media (min-width: 992px) {
+  .blog-post .post-content {
+    margin-top: 0px !important;
+  }
+}
+
+.post-bg {
+  padding-top: 1%;
+}
+
+@media (max-width:768px){
+.container {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+.blog-masonry .blog-box .blog-box-caption {
+    padding: 10px 10px !important;
+}
+
+.blog-masonry .blog-box {
+    margin: 10px 0px !important;
+}
+
+.blog-post .post-container {
+    padding: 10px 10px !important;
+}
+
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+
+
+.social-icons li .fa-facebook {
+  color: #3B5998;
+}
+.social-icons li .fa-qq {
+  color: #0BB2FF;
+}
+.social-icons li .fa-qzone {
+  color: #FBC440;
+}
+.social-icons li .fa-weibo {
+  color: #E6162D;
+}
+.social-icons li .fa-youtube-play {
+  color: #f00;
+}
+
+html.no-touch .social-icons li a.fa-facebook:hover:before {
+  color: #3B5998;
+}
+html.no-touch .social-icons li a.fa-qq:hover:before {
+  color: #0BB2FF;
+}
+html.no-touch .social-icons li a.fa-qzone:hover:before {
+  color: #FBC440
+}
+html.no-touch .social-icons li a.fa-weibo:hover:before {
+  color: #E6162D;
+}
+html.no-touch .social-icons li a.fa-youtube-play:hover:before {
+  color: #f00;
+}
+
+
+.style-switcher .icon-switcher i {
+  background: transparent !important;
+}
+
+
+.preloader .spinner .dot1,
+.preloader .spinner .dot2 {
+  background-color: rgba(255, 25, 25, 1) !important;
+}
