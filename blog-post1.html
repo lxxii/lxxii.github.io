@@ -22,6 +22,8 @@
         <!--  Js -->
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/modernizr.custom.js"></script>
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/jquery-2.1.3.min.js"></script>
+	      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
     </head>
     <body>
 
@@ -190,7 +192,7 @@
                                             </a>                            
                                     </div><!-- .post-navigation --> 
                                     
-
+<div id="gitalk-container">
                                     <div class="post-comments">
                                         <div class="page-header">
                                             <h4>Comments (3)</h4>
@@ -268,7 +270,7 @@
                                             <button class="btn btn-default" type="submit">add comment</button>
                                         </form>
                                     </div><!-- .post-comment-add --> 
-                                    
+                                    </div>
  
                                 </div><!-- .col-lg-10 --> 
                             </div><!-- .row -->   
@@ -282,7 +284,22 @@
         
                             stellar_init('.content');
                             
-                        });                     
+                        });   
+			    
+			    
+			   var gitalk = new Gitalk({
+  clientID: '040b8d75ea787350c1de',
+  clientSecret: '1162d2be4c416d66ec946df1b3308b72718dda89',
+  repo: 'comments',
+  owner: 'lxxii',
+  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container') 
+			    
+			    
                     </script>
                     <!-- end: JS SCRIPT -->
 
