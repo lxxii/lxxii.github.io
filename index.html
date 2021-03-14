@@ -1105,6 +1105,15 @@
         <!-- 
              IMPORTANT: Delete plugin script "style-switcher.js" to disable style-swither.                    
         --> 
+	    
+	    <script>
+	    			    window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  } 
+}
+	   </script> 
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.js"></script>
    
     </body>
