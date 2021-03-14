@@ -212,7 +212,13 @@ html.no-touch .social-icons li a.fa-youtube-play:hover:before {
 .style-switcher .icon-switcher i {
   background: transparent !important;
 }
-
+#g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
+}
 
 .preloader .spinner .dot1,
 .preloader .spinner .dot2 {
