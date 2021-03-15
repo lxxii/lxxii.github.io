@@ -164,7 +164,7 @@ function contact_form_validate(t) {
                 success: function(e) {
                     t.find(".form-loader").fadeOut("fast");
                     var i = "1" == e.status ? !0 : !1, a = '<div class="alert ';
-                    a += 1 == i ? "error" : "success", a += '"><i class="fa fa-check-circle"></i>发送成功</div>', t.find(".alert-validate-form").html(a).fadeIn("fast", function() {
+                    a += 1 == i ? "success", a += '"><i class="fa fa-check-circle"></i>发送成功</div>', t.find(".alert-validate-form").html(a).fadeIn("fast", function() {
                         $(this).delay(1e4).fadeOut("fast", function() {
                            // $(this).remove();
                         });
