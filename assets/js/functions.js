@@ -164,15 +164,15 @@ function contact_form_validate(t) {
                 success: function(e) {
                     t.find(".form-loader").fadeOut("fast");
                     var i = "1" == e.status ? !0 : !1, a = '<div class="alert ';
-                    a += 1 == i ? "success" : "error", a += '"><i class="fa fa-check-circle"></i> ' + e.text + '</div>', t.find(".alert-validate-form").html(a).fadeIn("fast", function() {
+                    a += 1 == i ? "success" : "error", a += '"><i class="fa fa-check-circle"></i>发送成功</div>', t.find(".alert-validate-form").html(a).fadeIn("fast", function() {
                         $(this).delay(1e4).fadeOut("fast", function() {
-                           // $(this).remove();
+                            $(this).remove();
                         });
                     }), 1 == i && t.find(".form-control").val("");
                 },
                 error: function() {
                     t.find(".form-loader").fadeOut("fast");
-                    var e = '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> An error occured. Please try again later.</div>';
+                    var e = '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i>发生错误，请稍后再试。</div>';
                     t.find(".alert-validate-form").html(e).fadeIn("fast");
                 }
             }), void 0)
@@ -184,7 +184,7 @@ function contact_field_validation(t, e) {
         var i = void 0 !== e && e.length > 0 ? e : t.find(".validate"), a = new Array;
         return i.each(function() {
             var t = $(this).attr("data-validation-type"), e = $(this).hasClass("required"), i = $(this).val().trim(), n = new Array;
-            n.field_object = $(this), n.message = "成功", 1 != e || "" != i && null !== i && void 0 !== i || (n.message = "此字段必填"), "string" == t && "" != i && null !== i && void 0 !== i ? null == i.match(/^[\u4e00-\u9fa5]+$/i) && (n.message = "无效字符") : "email" == t && "" != i && null !== i && void 0 !== i ? null == i.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) && (n.message = "请输入有效的邮箱地址") : "phone" == t && "" != i && null !== i && void 0 !== i && null == i.match(/^\(?\+?[\d\(\-\s\)]+$/) && (n.message = "无效字符"), a.push(n)
+            n.field_object = $(this), n.message = "success", 1 != e || "" != i && null !== i && void 0 !== i || (n.message = "This field is required"), "string" == t && "" != i && null !== i && void 0 !== i ? null == i.match(/^[a-z0-9 .\-]+$/i) && (n.message = "Invalid characters found.") : "email" == t && "" != i && null !== i && void 0 !== i ? null == i.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) && (n.message = "Please enter a valid email address.") : "phone" == t && "" != i && null !== i && void 0 !== i && null == i.match(/^\(?\+?[\d\(\-\s\)]+$/) && (n.message = "Invalid characters found."), a.push(n)
         }), a
     }
 }
