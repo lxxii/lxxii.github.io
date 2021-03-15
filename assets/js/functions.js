@@ -140,7 +140,7 @@ function contact_form_validate(t) {
         status.innerHTML = "<div class='alert alert-danger'><i class='fa fa-exclamation-triangle'></i> 失败</div>"
       });
     }
-    form.addEventListener("submit", ) 
+    form.addEventListener("submit", handleSubmit) 
 }
 function contact_field_validation(t, e) {
     if (void 0 !== t && t.length > 0) {
