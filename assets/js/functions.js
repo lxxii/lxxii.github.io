@@ -121,63 +121,26 @@ function stellar_init(elem) {
  * ----------------------------------------------------------
  */
 function contact_form_validate(t) {
-    var e = void 0 !== t && t.length > 0 ? t : $("#contact-valid-form");
-    e.each(function() {
-        var t = $(this);
-        t.find(".field-validation").each(function() {
-            $(this).change(function() {
-                if ($(this).siblings(".alert").remove().fadeOut("slow", function() {
-                    $(this).remove();
-                }), "" !== $(this).val().trim()
-                ) {
-                    var e = contact_field_validation(t, $(this));
-                    if (e.length > 0 && void 0 !== e[0].message && "" !== e[0].message && "success" !== e[0].message) {
-                        var i = '<div class="alert"><i class="fa fa-exclamation-triangle"></i> ' + e[0].message + "</div>";
-                        $(this).after(i), $(this).siblings(".alert").fadeIn("slow");
-                    }
-                }
-            })
-        }), t.submit(function(e) {
-            e.preventDefault(), $(this).find(".form-loader").fadeIn("slow");
-
-            var i = $(this).attr("action");
-            if (void 0 == i && "" == i)
-                return !1;
-            $(this).find(".alert").remove().fadeOut("fast", function() {
-                $(this).remove();
-            }), $(this).find(".alert-validate-form").fadeOut("fast", function() {
-                $(this).empty();
-            });
-            var a = !1;
-            return $(this).find(".field-validation").each(function() {
-                var e = contact_field_validation(t, $(this));
-                if (e.length > 0 && void 0 !== e[0].message && "" != e[0].message && "success" != e[0].message) {
-                    var i = '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> ' + e[0].message + "</div>";
-                    $(this).after(i), $(this).siblings(".alert").fadeIn(), a =! 0;
-
-                }
-            }), 1 == a ? ($(this).find(".form-loader").fadeOut("fast"), !1) : ($.ajax({
-                type: "POST",
-                url: i,
-                data: $(this).serialize(),
-                dataType: "json",
-                success: function(e) {
-                    t.find(".form-loader").fadeOut("fast");
-                    var i = "1" == e.status ? !0 : !1, a = '<div class="alert ';
-                    a += 1 == i ? "success", a += '"><i class="fa fa-check-circle"></i>发送成功</div>', t.find(".alert-validate-form").html(a).fadeIn("fast", function() {
-                        $(this).delay(1e4).fadeOut("fast", function() {
-                           // $(this).remove();
-                        });
-                    }), 1 == i && t.find(".form-control").val("");
-                },
-                error: function() {
-                    t.find(".form-loader").fadeOut("fast");
-                    var e = '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i>发生错误，请稍后再试。</div>';
-                    t.find(".alert-validate-form").html(e).fadeIn("fast");
-                }
-            }), void 0)
-        })
-    })
+       var form = document.getElementById("#contact-valid-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById(".form-loader");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "<div class='alert success'><i class='fa fa-check-circle'></i>成功</div>";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "<div class='alert alert-danger'><i class='fa fa-exclamation-triangle'></i> 失败</div>"
+      });
+    }
+    form.addEventListener("submit", ) 
 }
 function contact_field_validation(t, e) {
     if (void 0 !== t && t.length > 0) {
