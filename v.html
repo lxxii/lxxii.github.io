@@ -11,20 +11,28 @@
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700,900' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
         <!-- Styles -->
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/pe-icon-7-stroke/css/pe-icon-7.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/bootstrap.min.css">        
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/pe-icon-7-stroke/css/pe-icon-7.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/animate.min.css"> 
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/animations.css"> 
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/owl.carousel.css">             
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-red.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-red.css">        
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/style.css">
         <!--  Js -->
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/modernizr.custom.js"></script>
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="json.json"></script>
     </head>
     <body>
-
+	<style>
+	    .tab a {color: #333;padding: 0 8px;letter-spacing: 1px;text-decoration: none}
+	    .tab a:hover {color: #ff1919;text-decoration: none}
+	    .tab a.activ {color: #ff1919}
+	    .row {padding: 0;margin: 0;position: relative;overflow: hidden;clear: both;box-sizing: border-box;}
+	    .col {padding: 3.125px;float: left;position: relative;display: block;box-sizing: border-box;}
+	    .btn {padding: 10px 0;letter-spacing: 1px;}
+	</style>
         <!-- PRELOADER -->
         <div class="preloader">
             <div class="spinner">
@@ -36,15 +44,15 @@
 
 
         <!-- NAVIGATION -->
-        <nav>
+        <nav role="navigation">
             <!-- Logo -->
             <div class="logo-box">
                 <a href="index.html" class="logo logo-img">
-                    <img src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/logo-red.png" class="img-responsive" alt="euforia">
+                    <img src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/logo-black.png" class="img-responsive" alt="euforia">
                 </a>
             </div>
             <!-- Menu button mobile -->
-            <button type="button" aria-label="Toggle Navigation" class="menu-button-mobile lines-button x2">
+            <button type="button" role="button" aria-label="Toggle Navigation" class="menu-button-mobile lines-button x2">
                 <span class="lines"></span>
             </button>
             <!-- Menu -->
@@ -75,7 +83,7 @@
                     <script language=javascript>
                         function show_date_time() {
                             window.setTimeout( "show_date_time()", 1000 );
-                            BirthDay = new Date( "01-01-2018 0:0:0" ); //建站日期
+                            BirthDay = new Date( "01-01-2020 0:0:0" ); //建站日期
                             today = new Date();
                             timeold = ( today.getTime() - BirthDay.getTime() );
                             sectimeold = timeold / 1000
@@ -100,19 +108,101 @@
             </footer>       
         </nav>
         <!-- end: NAVIGATION -->   
-        
-        
+
+
         <!-- PAGE-WRAPPER -->
         <div class="page-wrapper">
-            
-        <section id="page-ajax" class=" section-current">
-           <h1 class="text-center">Error - page not found!</h1>
-        </section>         
-                       
+
+
+            <!-- Blog-post Section --> 
+            <section id="v" class="page-activ">       
+                <div class="content">
+
+
+		    <div class="container-fluid">
+			<div class="row">
+			    <div class="col-md-10 col-md-offset-1 post-content">
+				<div class="play" style="margin-top: 2.1%;padding-top:56.25%;position: relative;overflow: hidden;">
+				    <iframe id="video" style="position: absolute;top: 0;width: 100%;height: 100%;" frameborder="0" scrolling="no" allowfullscreen="true" src="https://www.iqiyi.com/v_19rrnphc50.html" frameborder="0″ allowfullscreen"></iframe>
+				</div>
+
+				<div class="row">
+				    <blockquote>直播频道</blockquote>                        
+				    <h5 class="tab"><a href="javascript:;">央视频道</a><a href="javascript:;">卫视频道</a><a href="javascript:;">港澳台</a><a href="javascript:;">海外</a><a href="javascript:;">更多</a></h5>                        
+
+				    <ul class="row q">
+				    </ul>   
+				    <ul class="row p hide">
+				    </ul>
+				    
+				</div>
+
+
+			    </div><!-- .col-lg-10 --> 
+			</div><!-- .row -->   
+		    </div><!-- .container-fluid -->
+
+
+                    <!-- JS SCRIPT -->
+                    <script type="text/javascript">
+			jQuery(document).ready(function () {
+
+			    stellar_init('.content');
+
+			});
+                    </script>
+
+		    <!--
+		    <script type="text/javascript">
+		        for (var i =0; i < cctv.length; i++) {
+		            var temp="<li>"+cctv[i].name+" 。"+cctv[i].url+"</li>"
+		            $('ul').append(temp);
+		        }
+		    </script>		
+		    -->
+		    
+		    <script type="text/javascript">
+			for (var i = 0; i < cctv.length; i++) {
+			    var temp = "<li class='col col-lg-1 col-md-2 col-xs-3'>" + "<a class='btn btn-default show' href='javascript:;' data-url=" + cctv[i].url + ">" + cctv[i].name + "</a>" + "</li>"
+			    $('.row ul.q').append(temp);
+			}
+			for (var i = 0; i < satv.length; i++) {
+			    var temp = "<li class='col col-lg-1 col-md-2 col-xs-3'>" + "<a class='btn btn-default show' href='javascript:;' data-url=" + satv[i].url + ">" + satv[i].name + "</a>" + "</li>"
+			    $('.row ul.p').append(temp);
+			}
+		    </script>   
+
+		    <script type="text/javascript">
+			(function ($) {
+			    var $a = $('.tab a'),
+				    $ul = $('.row ul'),
+				    $btns = $('.row li a');
+			    $first = $('.tab a:first-child'),
+				    $first.addClass('activ');
+			    $a.click(function () {
+				var $this = $(this);
+				var $t = $this.index();
+				$a.removeClass();
+				$this.addClass('activ');
+				$ul.addClass('hide').removeClass('show');
+				$ul.eq($t).addClass('show');
+			    });
+			    $btns.on('click', function () {
+				var url = $(this).attr("data-url");
+				document.getElementById('video').src = '' + url;
+			    });
+			})(jQuery);
+		    </script>
+                    <!-- end: JS SCRIPT -->
+
+                </div><!-- .content -->  
+            </section>
+            <!-- end: Blog-post Section -->
+
         </div>
         <!-- end: PAGE-WRAPPER -->
-        
-        
+
+
         <!-- PLUGIN SCRIPTS -->
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/bootstrap.min.js"></script>
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/imagesloaded.pkgd.min.js"></script>
@@ -125,13 +215,7 @@
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/jquery.lazy.min.js"></script>
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/functions.js"></script>
         <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/js/custom.js"></script>
-        
-        
-        <!-- STYLE SWITCHER --> 
-        <!-- 
-             IMPORTANT: Delete plugin script "style-switcher.js" to disable style-swither.                    
-        --> 
-        <script src="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.js"></script>
-   
+
+
     </body>
 </html>
