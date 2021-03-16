@@ -1,0 +1,119 @@
+var cctv=[
+    {
+	"name": "CCTV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },
+    {
+	"name": "CCTV 2",
+	"url": "https://www.mk2048.com/knowledge/knowledge_list.php?channel_tab=1"
+    },
+    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },
+    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },
+        {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },
+        {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },
+        {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },    {
+	"name": "CCTV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },
+    
+    
+    
+    
+    
+    
+    
+    {
+	"name": "CCTV 4",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000204803.m3u8"
+    }
+    
+]
+var satv=[
+    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },
+        {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },    {
+	"name": "SATV 1",
+	"url": "https://www.mk2048.com/demo/demo_target_desc_hjhh2j111aib.html"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    {
+	"name": "SATV 2",
+	"url": "https://www.mk2048.com/knowledge/knowledge_list.php?channel_tab=1"
+    },
+    {
+	"name": "SATV 3",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000203803.m3u8"
+    },
+    {
+	"name": "SATV 4",
+	"url": "/jx/playerjs.php?url=//58.251.112.67/tlivecloud-cdn.ysp.cctv.cn/001/2000204803.m3u8"
+    }
+]
