@@ -110,14 +110,6 @@
 
 /*  左爱
 -------------------------------------------------------------- */
-p {
-    text-indent: 2em;
-}
-
-.footer .copyright {
-    margin-bottom: 10px !important;
-}
-
 :active {
   text-decoration:none !important;
 }
@@ -127,6 +119,15 @@ p {
 }
 ::-moz-focus-inner {
   border: 0 !important;
+}
+
+.preloader .spinner .dot1,
+.preloader .spinner .dot2 {
+  background-color: rgba(255, 25, 25, 1) !important;
+}
+
+.footer .copyright {
+    margin-bottom: 10px !important;
 }
 
 .btn.btn-link {
@@ -178,7 +179,6 @@ p {
     padding: 0px !important;
 }
 
-
 .social-icons li .fa-facebook {
   color: #3B5998;
 }
@@ -215,13 +215,6 @@ html.no-touch .social-icons li a.fa-youtube-play:hover:before {
 .style-switcher .icon-switcher i {
   background: transparent !important;
 }
-
-
-.preloader .spinner .dot1,
-.preloader .spinner .dot2 {
-  background-color: rgba(255, 25, 25, 1) !important;
-}
-
 
 .btn.weixin {
   color: #1AAD19;
