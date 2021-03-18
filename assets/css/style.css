@@ -121,11 +121,6 @@
   border: 0 !important;
 }
 
-.preloader .spinner .dot1,
-.preloader .spinner .dot2 {
-  background-color: rgba(255, 25, 25, 1) !important;
-}
-
 .footer .copyright {
     margin-bottom: 10px !important;
 }
@@ -214,40 +209,4 @@ html.no-touch .social-icons li a.fa-youtube-play:hover:before {
 
 .style-switcher .icon-switcher i {
   background: transparent !important;
-}
-
-.btn.weixin {
-  color: #1AAD19;
-}
-.btn.weixin:hover {
-  color: #fff;
-  background: #1AAD19;
-}
-.btn.qq {
-  color: #0BB2FF;
-}
-.btn.qq:hover {
-  color: #fff;
-  background: #0BB2FF;
-}
-.btn.qzone {
-  color: #FBC440;
-}
-.btn.qzone:hover {
-  color: #fff;
-  background: #FBC440;
-}
-.btn.weibo {
-  color: #E6162D;
-}
-.btn.weibo:hover {
-  color: #fff;
-  background: #E6162D;
-}
-.btn.money {
-  color: #ff1919;
-}
-.btn.money:hover {
-  color: #fff;
-  background: #ff1919;
 }
