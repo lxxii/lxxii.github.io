@@ -6,12 +6,12 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
-        <title>Euforia - Responsive Vcard Template v2</title>
+        <title>404</title>
         <!-- Google Font -->
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700,900' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
         <!-- Styles -->
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/pe-icon-7-stroke/css/pe-icon-7.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/animate.min.css"> 
@@ -72,16 +72,16 @@
                     <br />
                     本站已运行:
                     <span id="runtime"></span>
-                    <script language=javascript>
+                    <script type="text/javascript">
                         function show_date_time() {
                             window.setTimeout( "show_date_time()", 1000 );
-                            BirthDay = new Date( "01-01-2018 0:0:0" ); //建站日期
+                            BirthDay = new Date( "01-01-2020 0:0:0" ); //建站日期
                             today = new Date();
                             timeold = ( today.getTime() - BirthDay.getTime() );
-                            sectimeold = timeold / 1000
+                            sectimeold = timeold / 1000;
                             secondsold = Math.floor( sectimeold );
-                            msPerDay = 24 * 60 * 60 * 1000
-                            e_daysold = timeold / msPerDay
+                            msPerDay = 24 * 60 * 60 * 1000;
+                            e_daysold = timeold / msPerDay;
                             daysold = Math.floor( e_daysold );
                             e_hrsold = ( daysold - e_daysold ) * -24;
                             hrsold = Math.floor( e_hrsold );
@@ -92,10 +92,10 @@
                         }
                         show_date_time();
                     </script>
-                    <style>
-                        #runtime{animation:change 10s infinite;font-weight:800; }						
-                        @keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
-                    </style>
+		    <style>
+			#runtime{animation:change 18s infinite;font-weight:800; }						
+			@keyframes change{0%{color:#FF0000;}16.6%{color:#FF7F00;}33.3%{color:#FFFF00;}50%{color:#00FF00;}66.6%{color:#00FFFF;}83.3%{color:#0000FF;}100% {color:#8B00FF;}}
+		    </style>
                 </div>
             </footer>       
         </nav>
@@ -106,7 +106,7 @@
         <div class="page-wrapper">
             
         <section id="page-ajax" class=" section-current">
-           <h1 class="text-center">Error - page not found!</h1>
+           <h2 class="text-center">抱歉，页面无法访问…</h2>
         </section>         
                        
         </div>
