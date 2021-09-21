@@ -22,19 +22,27 @@
         <!--  Js -->
         <script src="assets/js/modernizr.custom.js"></script>
         <script src="assets/js/jquery-2.1.3.min.js"></script>
-    </head>
-    <body>
+
 	<style>
 	    .row{position: relative;overflow: hidden;clear: both;box-sizing: border-box;padding: 0;margin: 0;}
-	    #url{border:1px solid transparent;border-image: -webkit-linear-gradient(#4dff03, #00d0ff) 20 20;border-image: -moz-linear-gradient(#4dff03, #00d0ff) 20 20;border-image: -o-linear-gradient(#4dff03, #00d0ff) 20 20;border-image: linear-gradient(#4dff03, #00d0ff) 20 20;width:68%;line-height:22px;padding:10px 16px;display:block;float:left;}
-	    #api{border:1px solid transparent;border-image: -webkit-linear-gradient(#03a9f4, #ff0058) 20 20;border-image: -moz-linear-gradient(#03a9f4, #ff0058) 20 20;border-image: -o-linear-gradient(#03a9f4, #ff0058) 20 20;border-image: linear-gradient(#03a9f4, #ff0058) 20 20;width:15%;height:43.6px;line-height:30px;margin:0 1%;display:block;border-radius:0;font-size: 15px;float:left;}
-	    .play{border:1px solid transparent;border-image: -webkit-linear-gradient(#ffbc00, #ff0058) 20 20;border-image: -moz-linear-gradient(#ffbc00, #ff0058) 20 20;border-image: -o-linear-gradient(#ffbc00, #ff0058) 20 20;border-image: linear-gradient(#ffbc00, #ff0058) 20 20;width:15%;line-height:22px;padding: 10px 16px;display:block;letter-spacing: normal;font-size: 15px;float:left; }
+	    #url{border:1px solid transparent;border-image: linear-gradient(135deg, #FF0000,#FF7F00,#FFFF00,#00FF00,#00FFFF,#0000FF,#8B00FF) 1 10;width:68%;line-height:22px;padding:10px 16px;display:block;float:left;}
+            #url:hover{border: 1px solid transparent;border-image: linear-gradient(225deg, #FF0000,#FF7F00,#FFFF00,#00FF00,#00FFFF,#0000FF,#8B00FF) 1 10;}
+	    #api{border:1px solid transparent;border-image: linear-gradient(135deg,#FF0000, #00FF00, #0000FF) 1 10;width:15%;height:43.6px;line-height:30px;margin:0 1%;display:block;border-radius:0;font-size: inherit;float:left;}
+	    .play{border:1px solid transparent;border-image: linear-gradient(45deg,#FF1919, #FF5555, #FF7777) 1 10;width:15%;line-height:22px;padding: 10px 16px;display:block;letter-spacing: normal;font-size: inherit;float:left; }
+
+	    #runtime{animation:change 18s infinite;font-weight:800; }						
+	    @keyframes change{0%{color:#FF0000;}16.6%{color:#FF7F00;}33.3%{color:#FFFF00;}50%{color:#00FF00;}66.6%{color:#00FFFF;}83.3%{color:#0000FF;}100% {color:#8B00FF;}}
+
 	    @media (max-width:768px){
 		#url{width:100%;}
 		#api{width:49%;margin:2% 2% 0 0;}
 		.play{width:49%;margin:2% 0 0 0;}
 	    }
 	</style>
+
+    </head>
+    <body>
+
         <!-- PRELOADER -->
         <div class="preloader">
             <div class="spinner">
@@ -82,16 +90,16 @@
                     <br />
                     本站已运行:
                     <span id="runtime"></span>
-                    <script language=javascript>
+                    <script type="text/javascript">
 			function show_date_time() {
 			    window.setTimeout("show_date_time()", 1000);
 			    BirthDay = new Date("01-01-2020 0:0:0"); //建站日期
 			    today = new Date();
 			    timeold = (today.getTime() - BirthDay.getTime());
-			    sectimeold = timeold / 1000
+			    sectimeold = timeold / 1000;
 			    secondsold = Math.floor(sectimeold);
-			    msPerDay = 24 * 60 * 60 * 1000
-			    e_daysold = timeold / msPerDay
+			    msPerDay = 24 * 60 * 60 * 1000;
+			    e_daysold = timeold / msPerDay;
 			    daysold = Math.floor(e_daysold);
 			    e_hrsold = (daysold - e_daysold) * -24;
 			    hrsold = Math.floor(e_hrsold);
@@ -102,17 +110,13 @@
 			}
 			show_date_time();
                     </script>
-                    <style>
-                        #runtime{animation:change 10s infinite;font-weight:800; }						
-                        @keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
-                    </style>
 
 		    <script>
-			var num = 0
+			var num = 0;
 			function play() {
 			    var rul = document.getElementById("url").value;
-			    if (rul == "") {
-				alert("请粘贴视频网址 ー=≡Σ( ε|) °^_^...")
+			    if (rul === "") {
+				alert("请粘贴视频网址 ー=≡Σ( ε|) °^_^...");
 			    } else {
 				var url = document.getElementById('url').value;
 				var api = document.getElementById('api').value;
@@ -131,8 +135,7 @@
         <!-- PAGE-WRAPPER -->
         <div class="page-wrapper">
 
-
-            <!-- Blog-post Section --> 
+            <!-- jx Section --> 
             <section id="jx" class="page-activ">       
                 <div class="content">
 
@@ -141,20 +144,20 @@
 			<div class="row">
 			    <div class="col-md-10 col-md-offset-1 post-content" style="padding:0 2.1%">
 				<div class="palybox" style="margin-top: 2.1%;padding-top:56.25%;position: relative;overflow: hidden;">
-				    <iframe id="video" style="position: absolute;top: 0;width: 100%;height: 100%;" frameborder="0" scrolling="no" allowfullscreen="true" src="assets/jx/play.html" frameborder="0″ allowfullscreen"></iframe>
+				    <iframe id="video" style="position: absolute;top: 0;width: 100%;height: 100%;" src="assets/jx/play.html" ></iframe>
 				</div>
 				<blockquote>视频解析</blockquote>                                                
 				<input type="text"  id="url"  placeholder="请粘贴视频网址 ー=≡Σ( ε|) °^_^..." />
 				<select class="form-control input-lg" id="api" >
-				    <option value="https://jx.mmkv.cn/tv.php?url=" selected="">全网</option>
-				    <option value="http://jx.quanmingjiexi.com/?url=">一号接口</option>
-				    <option value="//www.8090g.cn/jiexi/?url=">二号接口</option>
-				    <option value="https://www.1717yun.com/jiexi/?url=">三号接口</option>
-				    <option value="//v.canzhisong.cn/k.php?url=">四号接口</option>
-				    <option value="https://www.qianyicp.com/jiexi/index.php?url=">五号接口</option>
-				    <option value="https://api.yueliangjx.com/?url=">六号接口</option>
-				    <option value="https://jx.m3u8.tv/jiexi/?url=">七号接口</option>
-				    <option value="https://z1.m1907.cn/?jx=">八号接口</option>
+				    <option value="//jx.mmkv.cn/tv.php?url=" selected="">全网</option>
+				    <option value="//jx.quanmingjiexi.com/?url=">一号接口</option>
+				    <option value="//v.canzhisong.cn/k.php?url=">二号接口</option>
+				    <option value="//www.qianyicp.com/jiexi/index.php?url=">三号接口</option>
+				    <option value="//api.yueliangjx.com/?url=">四号接口</option>
+				    <option value="//jx.m3u8.tv/jiexi/?url=">五号接口</option>
+				    <option value="//www.administratorw.com/index.php?url=">六号接口</option>
+				    <option value="//jx.m3u8.tv/jiexi/?url=">七号接口</option>
+				    <option value="//okjx.cc/?url=">八号接口</option>
 				</select> 
 				<button type="button" class="btn btn-default play" onclick="play()">立即播放</button>
 			    </div><!-- .col-lg-10 --> 
@@ -174,7 +177,7 @@
 
                 </div><!-- .content -->  
             </section>
-            <!-- end: Blog-post Section -->
+            <!-- end: jx Section -->
 
         </div>
         <!-- end: PAGE-WRAPPER -->
@@ -192,7 +195,14 @@
         <script src="assets/js/jquery.lazy.min.js"></script>
         <script src="assets/js/functions.js"></script>
         <script src="assets/js/custom.js"></script>
-
-
+	<script src="assets/js/activate-power-mode.js "></script>
+        
+        
+        <!-- STYLE SWITCHER --> 
+        <!-- 
+             IMPORTANT: Delete plugin script "style-switcher.js" to disable style-swither.                    
+        --> 
+        <script src="assets/style-switcher/style-switcher.js"></script>
+   
     </body>
 </html>
