@@ -14,11 +14,11 @@ jQuery(document).ready(function($) {
     "use strict";
     
     // Install Switcher
-    $("head").append('<link href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.css" rel="stylesheet"/>');
+    $("head").append('<link href="//gcore.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.css" rel="stylesheet"/>');
     $("body").append('<div id="style-switcher"></div>');
     
     var swither = $("#style-switcher");
-    swither.load("//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.html");
+    swither.load("//gcore.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/style-switcher/style-switcher.html");
 
     // animate page transitions
     swither.on("change", "form .page-transitions", function () {
@@ -73,8 +73,8 @@ function switcher_color(v) {
             less.modifyVars({'@color-default': '@color-'+v});   
         } else {
             // EDIT TO CSS
-            $("head").append('<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-' + v + '.css">');
-            //$("link#style-color").attr("href", "//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-" + v + ".css");  
+            $("head").append('<link rel="stylesheet" href="//gcore.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-' + v + '.css">');
+            //$("link#style-color").attr("href", "//gcore.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/css/theme-" + v + ".css");  
         }
         switcher_panel_activ('color-selector','bg-'+v); 
 }
@@ -110,7 +110,7 @@ function switcher_logo(v) {
 function switcher_logo_color(v) {
         
         if ($("a.logo-img")) {
-            $(".logo-img img").attr("src", "//cdn.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/logo-" + v + ".png");
+            $(".logo-img img").attr("src", "//gcore.jsdelivr.net/gh/lxxii/lxxii.github.io@latest/assets/img/logo-" + v + ".png");
         }
         switcher_panel_activ('logo_color',v);        
 }
